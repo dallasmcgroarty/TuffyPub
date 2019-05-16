@@ -6,9 +6,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ChatComponent } from './chat/chat.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [FooterComponent, NavbarComponent, ChatComponent],
+  declarations: [FooterComponent, NavbarComponent, ChatComponent, SidebarComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -18,6 +19,7 @@ import { ChatComponent } from './chat/chat.component';
   exports: [
     FooterComponent,
     NavbarComponent,
+    SidebarComponent,
     ChatComponent
   ]
 })
