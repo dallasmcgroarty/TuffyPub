@@ -1,0 +1,49 @@
+.groups {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 60px;
+    padding-left: 20%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.card {
+    display: flex;
+    align-items: left;
+    align-self: center;
+    width: 40%;
+    background-color: white;
+    margin-top: 30px;
+    // margin-left: 45px;
+    padding: 0 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.384);
+    animation: slide-down 1.0s ease;
+    transition: 0.1s;
+}
+
+.card:hover {
+    width: 42%;
+    /* padding: 5px 29px 5px 29px; */
+    padding: 10px 3% 15px 3%;
+    margin-left: 25px;
+    margin-top: 27px;
+    border-radius: 0;
+}
+
+.bar {
+    height: 25px;
+    color: grey;
+    margin-top: 10px;
+    /* background-color: rgb(173, 173, 173) */
+}
+.bar a {
+    text-decoration: none;
+    font-weight: 600;
+}

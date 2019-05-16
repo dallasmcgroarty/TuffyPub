@@ -1,2 +1,14 @@
-About Page!
+<div class="groups">
+    <h1>Existing group chats</h1>
+    <!-- <ul>
+        <li *ngFor="let chat of userChats$ | async">
+            <a [routerLink]="'chats/' + chat.id">{{ chat.chatName }} - {{ chat.messages.length }} Messages </a>
+        </li>
+    </ul> -->
+    <div class="card" *ngFor="let chat of userChats$ | async">
+            <!-- <div class="bar"><a [routerLink]="'dashboard/chats/' + chat.id" >{{ chat.chatName }} - {{ chat.messages.length }} Messages</a></div> -->
+            <div class="bar"><a href="https://tuffypub.firebaseapp.com/dashboard/chats/{{ chat.id }}">{{ chat.chatName }} - {{ chat.messages.length }} Messages </a></div>
 
+        </div> 
+
+</div>

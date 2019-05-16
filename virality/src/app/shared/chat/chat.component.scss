@@ -112,6 +112,12 @@
     font-weight: 600;
 }
 
+.text {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: left;
+}
+
 a {
     text-decoration: none !important;
 }
@@ -167,3 +173,24 @@ a {
 }
 
 
+@media (max-width:1400px) {
+    .chat-container {
+        margin-left: 300px;
+    }
+}
+@media (max-width:800px) {
+    .chat-container {
+        margin-left: 300px;
+    }
+    .card {
+        margin-left: 15px;
+        width: 95%;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width:600px) {
+    .chat-container {
+        margin-left: 300px;
+    }
+}

@@ -2,51 +2,9 @@
   <!-- <h2>Name: {{ user.displayName }}</h2>
   <h2> Email: {{ user.email }}</h2> -->
   <div class="dashboard">
-    <div class="sidebar">
-        <div class="profile">
-        </div>
-        <p><a class="link name" href="">{{ user.displayName }}</a></p>
-        <ul>
-            <a href="dashboard"> 
-                <li class="sidelink">
-                    Global Chat
-                </li>
-            </a>
-            <a href=""> 
-                <li class="sidelink">
-                    My Groups
-                </li>
-            </a>
-            <a href=""> 
-                <li class="sidelink">
-                    Friends
-                </li>
-            </a>
-            <a href=""> 
-                <li class="sidelink">
-                    Calendar
-                </li>
-            </a>
-            <a href=""> 
-                <li class="sidelink">
-                    Preferences
-                </li>
-            </a>
-        </ul>
-        <div class="createChat">
-            <button (click)="cs.create()">Create New Chat</button>
-        </div>
-        <p style = "font-size: 18px">User Chats</p>
-        <ul>
-            <li *ngFor="let chat of userChats$ | async">
-                <a [routerLink]="'chats/' + chat.id">{{ chat.chatName }} - {{ chat.messages.length }} Messages </a>
-            </li>
-        </ul>
-    </div>
+    
     <app-gen-chat></app-gen-chat>
   </div>
-
-  
 </ng-container>
 
 <ng-template #whatThe>

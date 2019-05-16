@@ -8,7 +8,6 @@ const routes: Routes = [
   { path: '', loadChildren: './site/site.module#SiteModule' },
   { path: '', loadChildren: './users/authpages/authpages.module#AuthpagesModule' },
   { path: '', loadChildren: './dashboard/dashboard.module#DashboardModule', canActivate: [AuthGuard] }
-  //{ path: 'chats/:id', component: ChatComponent, canActivate: [AuthGuard] },
 
 ];
 
